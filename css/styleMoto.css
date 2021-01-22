@@ -103,7 +103,6 @@ html, body {
   font-size: calc(14px + 3.8 * ((100vw - 320px) / 1380));
   color: #676767; }
 
-/*Что-то типо обнуляющего стиля!!!!! Оч важно*/
 img {
   max-width: 100%;
   height: auto; }
@@ -121,14 +120,9 @@ img {
     opacity: 0;
     visibility: hidden; }
 
-.wrapper {
-  /*background: rgb(255,255,255);
-   background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(184, 184, 191, 0.6) 20%, rgba(236,238,236,1) 100%);*/
-  /* max-width: 1700px;
-   margin: 0 auto;*/ }
+.wrapper {}
 
 .main {
-  /*Если не написать оболочке ВСЕГО документа это,то всё будет уходить под картинку*/
   position: absolute;
   top: 0;
   left: 0;
@@ -241,7 +235,6 @@ img {
     -webkit-transform: scale(0);
     -ms-transform: scale(0);
     transform: scale(0);
-    /*меняем цвет палок когда они активны*/
     background: #fff; }
     .menu__icon.active span:first-child {
       -webkit-transform: rotate(-45deg);
@@ -306,7 +299,6 @@ img {
         z-index: 1; } }
 
 .tours {
-  /*background: rgb(255,255,255);*/
   background: -webkit-gradient(linear, left top, left bottom, from(white), color-stop(70%, rgba(184, 184, 191, 0.6)), color-stop(80%, #eceeec));
   background: -webkit-linear-gradient(top, white 0%, rgba(184, 184, 191, 0.6) 70%, #eceeec 80%);
   background: -o-linear-gradient(top, white 0%, rgba(184, 184, 191, 0.6) 70%, #eceeec 80%);
@@ -884,10 +876,6 @@ img {
     margin-bottom: 25px; } }
 
 @media (max-width: 950px) {
-  /*.main-screen__bike {
-    width: 746px;
-    height: 450px;
-	}*/
   .moto-block__img {
     display: none; }
   .wild__body {
@@ -944,14 +932,9 @@ img {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    /*Сделали 100% вместо нуля уже в конце, чтобы меню уехало вверх и спускалось только
-когда его вызовут*/
     top: -100%;
     left: 0;
-    /*Добавляем это уже в конце, чтобы в если человек перевернёт телефон горизонтально
-и меню не будет влезать у него была возможность проскролить*/
     overflow: auto;
-    /*Чтобы при active оно плавно выезжало сверху*/
     -webkit-transition: all 0.4s ease 0s;
     -o-transition: all 0.4s ease 0s;
     transition: all 0.4s ease 0s;
@@ -964,7 +947,6 @@ img {
     position: absolute;
     width: 40px;
     height: 30px;
-    /*достаём наверх*/
     z-index: 5; } }
 
 @media (max-width: 800px) {
@@ -1076,9 +1058,4 @@ img {
   .main-screen__bike {
     bottom: 100px; } }
 
-@media (max-height: 650px) {
-  /*.main-screen__bike {
-    width: 746px;
-    height: 450px;
-    left: calc( 50% - 373px);
-	}*/ }
+@media (max-height: 650px) {}
